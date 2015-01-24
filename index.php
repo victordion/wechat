@@ -4,6 +4,7 @@
   */
 function random_pic($dir = '/var/www/html/weixin/pic')
 {
+	//
     $files = glob($dir . '/*.*');
     $file = array_rand($files);
     return $files[$file];
